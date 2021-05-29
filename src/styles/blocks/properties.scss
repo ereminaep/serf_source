@@ -1,0 +1,26 @@
+.properties {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.properties__item {
+    display: flex;
+    flex-direction: column;
+    &:nth-last-child(2n) {
+        margin-right: 2.5rem;
+    }
+}
+
+.properties__name {
+    color: #666666;
+}
+
+.properties__value {
+    font-weight: bold;
+}
+
+@media(max-width:$notebook) {
+    .properties__item:nth-last-child(2n) {
+        margin-right: 3.125rem;
+    }
+}

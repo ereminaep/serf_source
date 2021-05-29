@@ -1,0 +1,137 @@
+.order {
+    background-color: $light-black;
+    height: 100vh;
+    position: relative;
+    &::before {
+        content: '';
+        background-image: url(#{$background-order});
+        background-size: cover;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        opacity: 0.6;
+    }
+}
+
+.order--popup {
+    &::after {
+        content: '';
+        background: black;
+        display: block;
+        position: absolute;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+}
+
+.order__form {
+    display: flex;
+    margin-bottom: 3.125rem;
+}
+
+.order__side {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.order__line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order__line_radio {
+    margin-top: 1.25rem;
+}
+
+.order__line_checkbox {
+    margin-top: 0.625rem;
+}
+
+.order__buttons {
+    margin-top: 1.875rem;
+}
+
+.order__error {
+    color: red;
+    font-size: 1rem;
+    position: relative;
+    top: -5px;
+    line-height: 0.1rem;
+}
+
+.order__message {
+    display: none;
+    width: 309px;
+    height: 176px;
+    background-color: $white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: calc(50% - 90px);
+    left: calc(50% - 155px);
+    z-index: 100;
+    &.order__message--open {
+        display: flex;
+    }
+}
+
+.clear-button {
+    text-decoration: none;
+    color: $white;
+    font-family: 'alegreya';
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    margin-left: 0.625rem;
+}
+
+.order__line_radio {
+    justify-content: flex-start;
+}
+
+.order__cache {
+    margin-right: 1.25rem;
+}
+
+@media(max-width:$notebook) {
+    .order {
+        height: auto;
+    }
+    .order__side {
+        margin-right: 0;
+    }
+    .order__form {
+        flex-direction: column;
+        width: 29.125rem
+    }
+    .order__container {
+        align-items: center;
+        min-height: 60.375rem;
+    }
+    .order__buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .order__button {
+        margin-right: 1.25rem;
+    }
+}
+
+@media(max-width:$mobile) {
+    .order__container {
+        min-height: 47.875rem;
+    }
+    .order__form {
+        width: auto;
+    }
+}

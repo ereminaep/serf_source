@@ -1,0 +1,8 @@
+.section-title {
+    @include title;
+    margin-bottom: 2rem;
+}
+
+.section-title_white {
+    @include title ($white);
+}

@@ -1,0 +1,32 @@
+.features-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 4.25rem;
+}
+
+.features-icons__item {
+    @include text(1em);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 9.75rem;
+    line-height: 1.125rem;
+    font-weight: bold;
+    margin-right: 1.875rem;
+}
+
+.features-icons__name {
+    margin-left: 0.625rem;
+}
+
+.features-icons__svg {
+    width: 2.5625rem;
+    height: 2.5625rem;
+    fill: $white;
+}
+
+@media (max-width:$notebook) {
+    .features-icons {
+        display: none;
+    }
+}

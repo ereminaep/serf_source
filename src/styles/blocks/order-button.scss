@@ -1,0 +1,22 @@
+.order-button {
+    text-transform: uppercase;
+    padding: 1.3125rem 2.5625rem;
+    border-radius: 6.25rem;
+    background: $yellow;
+    color: $black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'alegreya-bold';
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    &:hover {
+        border-radius: 6.25rem;
+        -webkit-border-radius: 6.25rem;
+        -moz-border-radius: 6.25rem;
+        -ms-border-radius: 6.25rem;
+        -o-border-radius: 6.25rem;
+        background: #d2b120;
+    }
+}

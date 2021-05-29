@@ -1,0 +1,26 @@
+.review-items {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-items__intro {
+    width: 4.625rem;
+    height: 4.625rem;
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    cursor: pointer;
+    &:hover {
+        border: 5px solid $yellow;
+    }
+    &:nth-child(2) {
+        margin: 0 0.375rem;
+    }
+}
+
+.review-items__intro--active {
+    border: 5px solid $yellow;
+    box-sizing: border-box;
+}

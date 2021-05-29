@@ -1,0 +1,22 @@
+.title {
+    @include text(3rem);
+    width: 50%;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 3.625rem;
+}
+
+@media (max-width:$notebook) {
+    .title {
+        width: 90%;
+        margin-top: 3.125rem;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:550px) {
+    .title {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+}

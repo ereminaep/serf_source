@@ -1,0 +1,15 @@
+.map {
+    height: calc(100vh - 5.625rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.map__content {
+    height: calc(100vh - 5.625rem);
+}
+
+@media (max-width:$notebook) {
+    .map {
+        min-height: 32.875rem;
+    }
+}

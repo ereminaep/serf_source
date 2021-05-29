@@ -1,0 +1,117 @@
+.menu {
+    color: $white;
+}
+
+.menu__title {
+    @include title;
+    z-index: 10;
+    text-align: left;
+    position: relative;
+    align-self: flex-start;
+    color: $white;
+}
+
+.menu__full {
+    background: black;
+    z-index: 1;
+    position: relative;
+    min-height: 40.75rem;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    &::before {
+        content: '';
+        background-image: url(#{$background-menu});
+        background-size: cover;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        opacity: 0.8;
+    }
+}
+
+.menu__container {
+    justify-content: flex-start;
+    margin-top: 6.875rem;
+    margin-left: 3.125em;
+}
+
+.menu__item-name {
+    width: 6.375rem;
+    position: relative;
+    font-size: 3rem;
+    line-height: 3.625rem;
+    font-weight: bold;
+    transform: rotate(-90deg);
+    margin-bottom: 5rem;
+}
+
+.menu__item-description {
+    width: 0;
+    overflow: hidden;
+    height: 100%;
+    font-size: 1rem;
+    background: rgba(51, 53, 55, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+}
+
+.menu__item {
+    z-index: 10;
+    background: black;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+@each $name in $menu {
+    .menu__item--#{$name}::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url('images/img/#{$name}.webp') 50%;
+        background-size: cover;
+        opacity: 0.6;
+    }
+}
+
+.menu__item--open {
+    .menu__item-description {
+        width: 100%;
+        padding: 31px 80px 0 34px;
+    }
+    &::before {
+        background-position: 110%;
+    }
+}
+
+@media (max-width:$notebook) {
+    .menu {
+        min-height: 2.375rem;
+    }
+    .menu__container--open {
+        display: none;
+    }
+}
+
+@media (max-width:$mobile) {
+    .menu__item--open {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 200;
+    }
+}

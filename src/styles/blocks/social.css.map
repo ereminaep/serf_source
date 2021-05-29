@@ -1,0 +1,11 @@
+{
+"version": 3,
+<<<<<<< HEAD
+"mappings": "AAAA,aAAc;EACV,OAAO,EAAE,IAAI;;AAGjB,aAAc;EACV,eAAe,EAAE,IAAI",
+=======
+"mappings": "AAAA,aAAc;EACV,OAAO,EAAE,IAAI;;AAGjB,aAAc;EACV,eAAe,EAAE,IAAI;;AAGzB,aAAc;EACV,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI",
+>>>>>>> develop
+"sources": ["social.scss"],
+"names": [],
+"file": "social.css"
+}

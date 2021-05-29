@@ -1,0 +1,38 @@
+.popup {
+    display: none;
+    width: 309px;
+    height: 176px;
+    background-color: $white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: calc(50% - 90px);
+    left: calc(50% - 155px);
+    z-index: 100;
+    &.popup--open {
+        display: flex;
+    }
+}
+
+.popup__text {
+    margin: 0 10px 18px 10px;
+    text-align: center;
+}
+
+.rectangle {
+    background: #1f1d1d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    opacity: 0.9;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+
+.rectangle--open {
+    display: block;
+}

@@ -1,0 +1,53 @@
+/.idea/
+
+.DS_Store
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# исключаем все текстовые и подобные ресурсы
+*.xml
+*.txt
+*.log
+
+# архивы, включая многотомные
+*.zip
+*.zip*  
+*.tar
+*.tar*
+*.enc
+*.enc*
+*.gz
+*.gz*
+*.tgz
+*.tgz*
+*.sql
+*.rar
+.hg
+.ftpconfig
+*.doc
+*.docx
+*.pdf
+*.rtf
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+*.psd
+*.psb
+*.sketch
+core.*
+
+# исключаем всякое от node.js
+node_modules
+dist
+bower_components
+.grunt
+.npm
+.env
+
+# и логи xhprof напоследок
+/xhprof/logs
+
+

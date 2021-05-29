@@ -1,0 +1,14 @@
+    .section-description {
+        @include text(1.125rem);
+        color: $grey;
+        line-height: 1.35rem;
+        text-align: center;
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    @media (max-width:$notebook) {
+        .section-description {
+            width: 70%;
+        }
+    }

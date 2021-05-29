@@ -1,0 +1,17 @@
+.textarea {
+    resize: none;
+    width: calc(100% - 0.625rem);
+    height: 9.125rem;
+    border: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-bottom: 0.75rem;
+    outline: none;
+    box-sizing: border-box;
+    &:focus {
+        border: 2px solid $yellow;
+    }
+}

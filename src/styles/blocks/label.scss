@@ -1,0 +1,13 @@
+.label {
+    color: $white;
+    font-family: 'alegreya';
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+}
+
+@media(max-width:$notebook) {
+    .label {
+        align-self: flex-start;
+        padding-left: 0.4375rem;
+    }
+}

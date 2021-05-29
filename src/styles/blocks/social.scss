@@ -1,0 +1,18 @@
+.social__list {
+    display: flex;
+}
+
+.social__item {
+    list-style-type: none;
+}
+
+.social__link-svg {
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: #B3B3B3;
+    margin-right: 0.9375rem;
+    &:hover {
+        fill: $black;
+    }
+}

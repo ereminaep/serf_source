@@ -1,0 +1,31 @@
+.phone__link {
+    @include text;
+    text-decoration: none;
+    line-height: 1.125rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.phone__link_black {
+    color: $black;
+    font-weight: 400;
+}
+
+.phone__icon {
+    display: block;
+    width: 0.8125rem;
+    height: 0.875rem;
+    margin-right: 0.5rem;
+    fill: $white;
+}
+
+.phone__icon--black {
+    fill: $black;
+}
+
+@media (max-width:$notebook) {
+    .phone {
+        display: none;
+    }
+}

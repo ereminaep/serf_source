@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    align-items: center;
+    margin-top: 0.9375rem;
+}
+
+@media (max-width:$notebook) {
+    .header {
+        background: #1968B1;
+        margin: 0;
+        padding: 0 1.875rem;
+        height: 5.6875rem;
+    }
+}
+
+@media (max-width:$mobile) {
+    .header {
+        padding: 0 0.625;
+    }
+}

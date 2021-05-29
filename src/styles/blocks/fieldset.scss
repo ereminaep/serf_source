@@ -1,0 +1,11 @@
+.fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media(max-width:$notebook) {
+    .fieldset {
+        align-items: center;
+    }
+}

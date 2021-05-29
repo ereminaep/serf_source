@@ -1,0 +1,7 @@
+.logo {
+    background-image: url(#{$logo});
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 3.75rem;
+    height: 2.5rem;
+}

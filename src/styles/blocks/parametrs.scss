@@ -1,0 +1,31 @@
+.parametrs {
+    width: 5.6875rem;
+    height: 5.6875rem;
+    background-color: #3A587E;
+    color: $white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.parametrs__svg {
+    width: 2.375rem;
+    height: 2.375rem;
+}
+
+.parametrs__svg {
+    fill: white;
+}
+
+@media (max-width:$notebook) {
+    .parametrs {
+        display: none;
+    }
+}
